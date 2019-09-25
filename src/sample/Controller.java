@@ -4,8 +4,15 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class Controller {
+
+    @FXML
+    private TextField productNameTxtInp;
+
+    @FXML
+    private TextField manTxtInp;
 
     @FXML
     private Label lblName;
@@ -18,12 +25,12 @@ public class Controller {
 
     @FXML
     void AddProductBtnPushed(ActionEvent event) {
-    System.out.println("AddProduct");
+        Main.queryier(" INSERT INTO Product(type, manufacturer, name) VALUES ('AUDIO','" +  manTxtInp.getText() + "','" + productNameTxtInp.getText() + "' ) ");
     }
 
     @FXML
     void recordProductionButtonPushed(ActionEvent event) {
-    System.out.println("product Recorded");
+        System.out.println("product Recorded");
     }
 
 }
