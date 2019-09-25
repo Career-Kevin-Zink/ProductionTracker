@@ -25,7 +25,7 @@ public class Controller {
 
     @FXML
     void AddProductBtnPushed(ActionEvent event) {
-        Main.queryier(" INSERT INTO Product(type, manufacturer, name) VALUES ('AUDIO','" +  manTxtInp.getText() + "','" + productNameTxtInp.getText() + "' ) ");
+        Main.queryier(" INSERT INTO Product(type, manufacturer, name) VALUES ('AUDIO','" + manTxtInp.getText() + "','" + productNameTxtInp.getText() + "' ) ");
     }
 
     @FXML
