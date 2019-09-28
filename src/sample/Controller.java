@@ -1,13 +1,23 @@
 package sample;
 
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class Controller {
 
+    /** Method that is called when the program launches which initializes some default values. */
+    public void initialize() {
+        QtyComboBox.setItems(
+                FXCollections.observableArrayList("1",
+                        "2","3", "4", "5", "6", "7", "8", "9", "10"));
+        QtyComboBox.setEditable(true);
+        QtyComboBox.getSelectionModel().selectFirst();
+    }
     @FXML
     private TextField productNameTxtInp;
 
@@ -19,6 +29,9 @@ public class Controller {
 
     @FXML
     private Button AddProductButton;
+
+    @FXML
+    private ComboBox<String> QtyComboBox;
 
     @FXML
     private Button RecordProductionButton;

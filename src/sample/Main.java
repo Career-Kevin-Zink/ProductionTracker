@@ -5,7 +5,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.sql.*;
-
 /**
  * @author Kevin Zink
  */
@@ -19,14 +18,12 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-
         primaryStage.setTitle("Production Tracker");
         Scene scene = new Scene(root, 300, 275);
         primaryStage.setScene(scene);
         scene.getStylesheets().add
                 (Main.class.getResource("styleSheet.css").toExternalForm());
         primaryStage.show();
-
     }
 
     public static void queryier(String sql) {
