@@ -1,6 +1,6 @@
 package io.github.zinkmk.product;
 
-public class Screen implements ScreenSpec {  // cute it implements another interface
+public class Screen implements ScreenSpec { // cute it implements another interface
 
   private int refreshRate;
   private int responseTime;
@@ -14,7 +14,7 @@ public class Screen implements ScreenSpec {  // cute it implements another inter
 
   public String getResolution() {
     return resolution;
-  }   // it's implementing these  which is cool
+  } // it's implementing these  which is cool
 
   public int getRefreshRate() {
     return refreshRate;

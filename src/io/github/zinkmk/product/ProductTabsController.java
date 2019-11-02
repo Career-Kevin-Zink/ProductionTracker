@@ -22,25 +22,35 @@ public class ProductTabsController {
   @FXML private ListView<String> chooseProductsLV;
 
   @FXML
-  void AddProductBtnPushed(ActionEvent event) {     // execute these things when you push this button.
-    if (productNameTxtInp.getText().trim().isEmpty()) {        // checking for empty text fields.
+  void AddProductBtnPushed(ActionEvent event) { // execute these things when you push this button.
+    if (productNameTxtInp.getText().trim().isEmpty()) { // checking for empty text fields.
       System.out.println("No empty text fields please.");
       return;
     }
     if (manTxtInp.getText().trim().isEmpty()) {
-      System.out.println("No empty text fields please.");  // checking for empty text fields in manufacturer
+      System.out.println(
+          "No empty text fields please."); // checking for empty text fields in manufacturer
       return;
     }
-      DBManager.saveProduct(            // saving product to the database
-     new Widget(0, itemType.getValue(), manTxtInp.getText(), productNameTxtInp.getText()));   // making a new product object
+    DBManager.saveProduct( // saving product to the database
+        new Widget(
+            0,
+            itemType.getValue(),
+            manTxtInp.getText(),
+            productNameTxtInp.getText())); // making a new product object
   }
 
   @FXML
-  void recordProductionButtonPushed(ActionEvent event) { // execute when we push the the linked button.
+  void recordProductionButtonPushed(
+      ActionEvent event) { // execute when we push the the linked button.
 
-    Product product = products.get(chooseProductsLV.getSelectionModel().getSelectedIndex()); // gets all the old products ?????
-    ProductionRecord pr = new ProductionRecord(product);  // makes a new PR object
-    DBManager.saveProductionRecord(pr);     //saving pr to database
+    Product product =
+        products.get(
+            chooseProductsLV
+                .getSelectionModel()
+                .getSelectedIndex()); // gets all the old products ?????
+    ProductionRecord pr = new ProductionRecord(product); // makes a new PR object
+    DBManager.saveProductionRecord(pr); // saving pr to database
     ProdLogView.appendText("\n" + pr.toString()); // output to production log view in fxml
   }
 
@@ -55,7 +65,7 @@ public class ProductTabsController {
 
         switch (allProducts.getString(3)) {
           case "Audio":
-             temp =
+            temp =
                 new Widget(
                     allProducts.getInt(1),
                     ItemType.AU,
@@ -64,15 +74,14 @@ public class ProductTabsController {
             products.add(temp);
             break;
           case "Visual":
-             temp =
-                    new Widget(
-                            allProducts.getInt(1),
-                            ItemType.VI,
-                            allProducts.getString(4),
-                            allProducts.getString(2));
+            temp =
+                new Widget(
+                    allProducts.getInt(1),
+                    ItemType.VI,
+                    allProducts.getString(4),
+                    allProducts.getString(2));
             products.add(temp);
             break;
-
         }
 
         chooseProductsLV
@@ -88,7 +97,6 @@ public class ProductTabsController {
     if (allProducts != null) {
       while (allProductionRecords.next()) {
         ProductionRecord pr =
-
             new ProductionRecord(
                 allProductionRecords.getInt(1),
                 allProductionRecords.getInt(2),

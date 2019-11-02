@@ -2,7 +2,7 @@ package io.github.zinkmk.product;
 
 import java.util.stream.Stream;
 
-public enum ItemType {  // this is our enum, the goal here being streamlining the item types below
+public enum ItemType { // this is our enum, the goal here being streamlining the item types below
   AU("Audio"),
   VI("Visual"),
   AM("AudioMobile"),
