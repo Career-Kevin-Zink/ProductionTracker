@@ -2,7 +2,7 @@ package io.github.zinkmk.product;
 
 public abstract class Product
     implements Item { // this class is abstract, so it'll make all the constructors getters and
-                      // setters
+  // setters
   // (Seen below) and have them for the classes that use this one.
   private int id; // This class implements item.
   private ItemType
@@ -26,7 +26,9 @@ public abstract class Product
   }
 
   @Override
-  public void setName(String newName) {}
+  public void setName(String newName) {
+    this.name = newName;
+  }
 
   @Override
   public String getName() {
@@ -34,7 +36,9 @@ public abstract class Product
   }
 
   @Override
-  public void setManufacturer(String newManufacturer) {}
+  public void setManufacturer(String newManufacturer) {
+    this.manufacturer = newManufacturer;
+  }
 
   @Override
   public String getManufacturer() {

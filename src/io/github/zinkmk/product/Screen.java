@@ -2,9 +2,9 @@ package io.github.zinkmk.product;
 
 public class Screen implements ScreenSpec { // cute it implements another interface
 
-  private int refreshRate;
-  private int responseTime;
-  private String resolution;
+  private final int refreshRate;
+  private final int responseTime;
+  private final String resolution;
 
   public Screen(String resolution, int refreshRate, int responseTime) {
     this.resolution = resolution;

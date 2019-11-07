@@ -1,8 +1,8 @@
 package io.github.zinkmk.product;
 
 public class MoviePlayer extends Product implements MultimediaControl {
-  private String screen;
-  private String monitorType; // initializing variable's for moniterType and screen
+  private final String screen;
+  private final String monitorType; // initializing variable's for monitorType and screen
 
   public MoviePlayer(
       String name,

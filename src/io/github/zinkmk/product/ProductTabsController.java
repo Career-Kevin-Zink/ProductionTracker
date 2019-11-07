@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class ProductTabsController {
-  ArrayList<Product> products = new ArrayList<>();
+  private final ArrayList<Product> products = new ArrayList<>();
   @FXML private ChoiceBox<ItemType> itemType;
   @FXML private TextField productNameTxtInp;
   @FXML private TextField manTxtInp;
@@ -61,7 +61,7 @@ public class ProductTabsController {
 
     if (allProducts != null) {
       while (allProducts.next()) {
-        Product temp = null;
+        Product temp;
 
         switch (allProducts.getString(3)) {
           case "Audio":

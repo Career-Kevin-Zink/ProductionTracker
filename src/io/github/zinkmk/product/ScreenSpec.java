@@ -1,6 +1,6 @@
 package io.github.zinkmk.product;
 
-public interface ScreenSpec {
+interface ScreenSpec {
   String getResolution();
 
   int getRefreshRate();

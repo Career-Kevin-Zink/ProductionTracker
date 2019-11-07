@@ -2,7 +2,7 @@ package io.github.zinkmk.product;
 
 import java.util.Date;
 
-public class ProductionRecord {
+class ProductionRecord {
   private int productionNumber;
   private int productID;
   private String SerialNumber;
@@ -24,7 +24,7 @@ public class ProductionRecord {
     SerialNumber =
         product.getManufacturer().substring(0, 3)
             + product.getType().name()
-            + String.format("%05d", itemCount); // serial numbers funzies, substring helps a lot.
+            + String.format("%05d", itemCount); // serial numbers fun, substring helps a lot.
     itemCount++;
   }
 
