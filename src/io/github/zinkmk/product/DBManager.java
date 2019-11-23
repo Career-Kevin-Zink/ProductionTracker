@@ -1,6 +1,8 @@
 package io.github.zinkmk.product;
 
+import java.io.FileInputStream;
 import java.sql.*;
+import java.util.Properties;
 
 class DBManager {
   private static final String JDBC_DRIVER = "org.h2.Driver";
@@ -14,8 +16,11 @@ class DBManager {
   public static void saveProduct(
       Product product) { // Function to save the product into the database.
     try { // try / catch so we don't error out.
+      Properties prop = new Properties();
+      prop.load(new FileInputStream("res/properties"));
+      String PASS = prop.getProperty("password");
       Class.forName(JDBC_DRIVER);
-      Connection conn = DriverManager.getConnection(DB_URL);
+      Connection conn = DriverManager.getConnection(DB_URL, "", PASS);
       PreparedStatement statement =
           conn.prepareStatement(
               "INSERT INTO Product (NAME, TYPE, MANUFACTURER)"
@@ -51,8 +56,11 @@ class DBManager {
   public static ResultSet loadProducts() { // Function to load a product from the database
     System.out.println("Connecting to database..");
     try { // try/catch to not error out
+      Properties prop = new Properties();
+      prop.load(new FileInputStream("res/properties"));
+      String PASS = prop.getProperty("password");
       Class.forName(JDBC_DRIVER);
-      Connection conn = DriverManager.getConnection(DB_URL);
+      Connection conn = DriverManager.getConnection(DB_URL, "", PASS);
       Statement stmt = conn.createStatement();
       ResultSet rs =
           stmt.executeQuery(
@@ -73,8 +81,11 @@ class DBManager {
    */
   public static ResultSet loadProductionRecords() { // Here we're loading our production records
     try {
+      Properties prop = new Properties();
+      prop.load(new FileInputStream("res/properties"));
+      String PASS = prop.getProperty("password");
       Class.forName(JDBC_DRIVER);
-      Connection conn = DriverManager.getConnection(DB_URL);
+      Connection conn = DriverManager.getConnection(DB_URL, "", PASS);
       Statement stmt =
           conn.createStatement(); // most of it's the same code as before just for a diff part
       return stmt.executeQuery("SELECT * FROM PRODUCTIONRECORD"); // of the database.
@@ -92,8 +103,11 @@ class DBManager {
   public static void saveProductionRecord(
       ProductionRecord productionRecord) { // and here we save our PR's
     try {
+      Properties prop = new Properties();
+      prop.load(new FileInputStream("res/properties"));
+      String PASS = prop.getProperty("password");
       Class.forName(JDBC_DRIVER);
-      Connection conn = DriverManager.getConnection(DB_URL);
+      Connection conn = DriverManager.getConnection(DB_URL, "", PASS);
       PreparedStatement statement =
           conn.prepareStatement(
               "INSERT INTO ProductionRecord (PRODUCT_ID, SERIAL_NUM, DATE_PRODUCED)"

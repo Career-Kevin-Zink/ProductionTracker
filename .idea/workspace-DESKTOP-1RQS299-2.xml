@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Quick update for weeks 5 and 6">
+      <change afterPath="$PROJECT_DIR$/src/io/github/zinkmk/product/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/AudioPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/AudioPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/DBManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/DBManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/ItemType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/ItemType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/MoviePlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/MoviePlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/MultimediaControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/MultimediaControl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/ProductTabs.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/ProductTabs.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/ProductTabsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/ProductTabsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/ProductionRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/ProductionRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/Screen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/Screen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/ScreenSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/ScreenSpec.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/Widget.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/Widget.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/styleSheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProductionTracker/io/github/zinkmk/product/styleSheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/PTI.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/res/PTI.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/github/zinkmk/product/AudioPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/github/zinkmk/product/AudioPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/github/zinkmk/product/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/github/zinkmk/product/DBManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/github/zinkmk/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/github/zinkmk/product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/github/zinkmk/product/ProductTabs.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/github/zinkmk/product/ProductTabs.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/github/zinkmk/product/ProductTabsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/github/zinkmk/product/ProductTabsController.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="PTI" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="PTI" type="feb32156:DbDataSourceImpl" />
+        <item name="PTI: database" type="2aa06773:H2ImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="PTI" type="feb32156:DbDataSourceImpl" />
+        <item name="PTI: database" type="2aa06773:H2ImplModel$Database" />
+        <item name="PUBLIC: schema" type="7f85d983:H2ImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="PTI" type="feb32156:DbDataSourceImpl" />
+        <item name="PTI: database" type="2aa06773:H2ImplModel$Database" />
+        <item name="PUBLIC: schema" type="7f85d983:H2ImplModel$Schema" />
+        <item name="PRODUCT: table" type="818c1b4a:H2ImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="PTI" type="feb32156:DbDataSourceImpl" />
+        <item name="PTI: database" type="2aa06773:H2ImplModel$Database" />
+        <item name="PUBLIC: schema" type="7f85d983:H2ImplModel$Schema" />
+        <item name="PRODUCTIONRECORD: table" type="818c1b4a:H2ImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="JavaFxApplication" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\kmzink1079\OneDrive - Florida Gulf Coast University\OOP Projects\ProductionTracker\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectId" id="1Qi65lBZWUEIFN3AMpuXcHz6nya" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/School work/OOP PROJECTS/Animal-Shelter-Project" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="recentsLimit" value="5" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.zinkmk.product.Main" />
+      <module name="ProductionTracker" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.zinkmk.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <module name="ProductionTracker" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.zinkmk.product.Main" />
+      <module name="ProductionTracker" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.zinkmk.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@abf3fd2a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@abf3fd2a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4553d8b1" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@abf3fd2a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@56390330" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+      <created>1359379246138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1359379246138</updated>
+      <workItem from="1359379250712" duration="1302000" />
+      <workItem from="1568240893066" duration="1230000" />
+      <workItem from="1568242183666" duration="157000" />
+      <workItem from="1568242355361" duration="276000" />
+      <workItem from="1568242652385" duration="729000" />
+      <workItem from="1568839374180" duration="807000" />
+      <workItem from="1568845129534" duration="2434000" />
+      <workItem from="1569195063000" duration="868000" />
+      <workItem from="1569430618918" duration="859000" />
+      <workItem from="1569433132289" duration="1747000" />
+      <workItem from="1569435134007" duration="1795000" />
+      <workItem from="1569437042628" duration="1668000" />
+      <workItem from="1569695236559" duration="10194000" />
+      <workItem from="1570048736243" duration="6259000" />
+      <workItem from="1570652923124" duration="8000" />
+      <workItem from="1570658225794" duration="3634000" />
+      <workItem from="1571258067590" duration="7738000" />
+      <workItem from="1571862534685" duration="4764000" />
+      <workItem from="1572047351963" duration="17618000" />
+      <workItem from="1572467809769" duration="598000" />
+      <workItem from="1573076095904" duration="581000" />
+      <workItem from="1573077152451" duration="5647000" />
+      <workItem from="1573093413064" duration="9257000" />
+      <workItem from="1573681661386" duration="5991000" />
+    </task>
+    <task id="LOCAL-00001" summary="hihi">
+      <created>1568241161671</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568241161671</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Weeks 1 - 4 are updated aside from CSS.">
+      <created>1568848138307</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568848138307</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Quick update for weeks 5 and 6">
+      <created>1569706919615</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569706919615</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <MESSAGE value="hihi" />
+    <MESSAGE value="Weeks 1 - 4 are updated aside from CSS." />
+    <MESSAGE value="Quick update for weeks 5 and 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quick update for weeks 5 and 6" />
+  </component>
+</project>

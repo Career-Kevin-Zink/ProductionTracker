@@ -20,6 +20,10 @@ public class ProductTabsController {
   @FXML private TextArea ProdLogView;
   @FXML private Button RecordProductionButton;
   @FXML private ListView<String> chooseProductsLV;
+  @FXML private TextField nameTxtField;
+  @FXML private TextField passTxtField;
+  @FXML private TextArea displayTxtArea;
+  @FXML private Button submitButton;
 
   @FXML
   void AddProductBtnPushed(ActionEvent event) { // execute these things when you push this button.
@@ -38,6 +42,17 @@ public class ProductTabsController {
             itemType.getValue(),
             manTxtInp.getText(),
             productNameTxtInp.getText())); // making a new product object
+  }
+
+  @FXML
+  void submitButtonPushed(ActionEvent event) {
+    if (nameTxtField.getText().isEmpty())
+      System.out.println("Name cannot be empty!");
+    if (passTxtField.getText().isEmpty())
+      System.out.println("Password cannot be empty!");
+
+    Employee Shithead = new Employee(nameTxtField.getText(), passTxtField.getText());
+    displayTxtArea.setText(Shithead.toString());
   }
 
   @FXML

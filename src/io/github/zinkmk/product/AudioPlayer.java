@@ -5,6 +5,15 @@ public class AudioPlayer extends Product implements MultimediaControl {
   private final String supportedAudioFormats;
   private final String supportedPlaylistFormats;
 
+  /**
+   *
+   * TODO idk actually use this?
+   * Audio player not currently in use..
+   * @param manufacturer taken from product
+   * @param name taken from product
+   * @param supportedAudioFormats generated here
+   * @param supportedPlaylistFormats generated here
+   */
   public AudioPlayer(
       String manufacturer,
       String name,

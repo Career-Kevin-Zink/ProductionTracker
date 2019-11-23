@@ -1,12 +1,14 @@
 package io.github.zinkmk.product;
 
-public abstract class Product
-    implements Item { // this class is abstract, so it'll make all the constructors getters and
-  // setters
-  // (Seen below) and have them for the classes that use this one.
-  private int id; // This class implements item.
-  private ItemType
-      type; // that being said, all getters and setters for id man and name are overridden
+/**
+ * @author kevin
+ * This class implements item this class is abstract, so it'll make all the constructors getters and
+ * setters (Seen below) and have them for the classes that use this one. that being said, all
+ * getters and setters for id man and name are overridden.
+ */
+public abstract class Product implements Item {
+  private int id;
+  private ItemType type;
   private String manufacturer;
   private String name;
 
