@@ -1,5 +1,5 @@
 package io.github.zinkmk.product;
-
+/** @author Kevin Zink this is our enum, the goal here being streamlining the item types below */
 public enum ItemType { // this is our enum, the goal here being streamlining the item types below
   AU("Audio"),
   VI("Visual"),
@@ -16,6 +16,11 @@ public enum ItemType { // this is our enum, the goal here being streamlining the
     return type;
   }
 
+  /**
+   * toString method for our Enum's
+   *
+   * @return The text we want to send up the toString.
+   */
   public String toString() {
     if (type.compareTo("Audio") == 0) return "Audio";
     else if (type.compareTo("Visual") == 0) return "Visual";

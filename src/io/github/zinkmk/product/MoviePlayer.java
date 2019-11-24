@@ -3,7 +3,7 @@ package io.github.zinkmk.product;
 public class MoviePlayer extends Product implements MultimediaControl {
   private final String screen;
   private final String monitorType; // initializing variable's for monitorType and screen
-
+  /** @author Kevin Zink Not really used at the moment aside from getting the enum out of it. */
   public MoviePlayer(
       String name,
       String manufacturer,

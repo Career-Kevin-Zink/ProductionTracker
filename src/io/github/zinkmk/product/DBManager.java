@@ -3,7 +3,10 @@ package io.github.zinkmk.product;
 import java.io.FileInputStream;
 import java.sql.*;
 import java.util.Properties;
-
+/**
+ * @author Kevin Zink This is the class I use for managing the database. It basically has all of the
+ *     load / save methods in it so they're all in one nice consice place.
+ */
 class DBManager {
   private static final String JDBC_DRIVER = "org.h2.Driver";
   private static final String DB_URL = "jdbc:h2:./res/PTI";
@@ -12,9 +15,10 @@ class DBManager {
    * Method for saving products to database.
    *
    * @param product The product to be saved.
+   * @param QtyComboBox Uses the quantity in the combo box in the FXML to save the qty to the
+   *     database
    */
-  public static void saveProduct(
-      Product product) { // Function to save the product into the database.
+  public static void saveProduct(Product product, String QtyComboBox) {
     try { // try / catch so we don't error out.
       Properties prop = new Properties();
       prop.load(new FileInputStream("res/properties"));
@@ -23,12 +27,13 @@ class DBManager {
       Connection conn = DriverManager.getConnection(DB_URL, "", PASS);
       PreparedStatement statement =
           conn.prepareStatement(
-              "INSERT INTO Product (NAME, TYPE, MANUFACTURER)"
-                  + "VALUES (?,?,?)", // specifically into this area with these values
+              "INSERT INTO Product (NAME, TYPE, MANUFACTURER, QTY)"
+                  + "VALUES (?,?,?,?)", // specifically into this area with these values
               PreparedStatement.RETURN_GENERATED_KEYS);
       statement.setString(1, product.getName());
       statement.setString(2, product.getType().getValue());
       statement.setString(3, product.getManufacturer());
+      statement.setString(4, QtyComboBox);
 
       // Execute update
       statement.executeUpdate();
@@ -60,7 +65,7 @@ class DBManager {
       prop.load(new FileInputStream("res/properties"));
       String PASS = prop.getProperty("password");
       Class.forName(JDBC_DRIVER);
-      Connection conn = DriverManager.getConnection(DB_URL, "", PASS);
+      Connection conn = DriverManager.getConnection(DB_URL, "", "SonSat1200");
       Statement stmt = conn.createStatement();
       ResultSet rs =
           stmt.executeQuery(

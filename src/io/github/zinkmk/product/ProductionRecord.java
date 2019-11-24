@@ -1,7 +1,10 @@
 package io.github.zinkmk.product;
 
 import java.util.Date;
-
+/**
+ * @author Kevin Zink This makes a production record, it's main use is to help generate the Serial
+ *     Number in the product log.
+ */
 class ProductionRecord {
   private int productionNumber;
   private int productID;
@@ -9,7 +12,16 @@ class ProductionRecord {
   private String dateProduced;
   private static int itemCount = 0;
 
-  public ProductionRecord( // constructor for loading previous PR's
+  /**
+   * constructor for loading previous PR's, we pass a product object from the database and it can
+   * fill all the parameters.
+   *
+   * @param productionNumber We load this from the database.
+   * @param productID We load this from the database.
+   * @param serialNumber We load this from the database.
+   * @param dateProduced We load this from the database.
+   */
+  public ProductionRecord(
       int productionNumber, int productID, String serialNumber, String dateProduced) {
     this.productionNumber = productionNumber;
     this.productID = productID;
@@ -17,8 +29,13 @@ class ProductionRecord {
     this.dateProduced = dateProduced;
     itemCount++;
   }
-  // Todo: form serial number.
-  public ProductionRecord(Product product) { // constructor for making a new PR
+
+  /**
+   * constructor for making a new PR we pass an object to it and the object has all the data needed.
+   *
+   * @param product the product object we use to get our data.
+   */
+  public ProductionRecord(Product product) {
     productID = product.getId();
     dateProduced = new Date().toString();
     SerialNumber =

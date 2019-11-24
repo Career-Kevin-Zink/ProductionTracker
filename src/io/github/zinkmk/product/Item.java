@@ -1,7 +1,10 @@
 package io.github.zinkmk.product;
-
-interface Item { // big ol interface, specifically for these functions
-  int getId(); // This interface gets implemented by @Product
+/**
+ * @author Kevin Zink interface built specifically for these functions This interface gets
+ *     implemented by @Product
+ */
+interface Item {
+  int getId();
 
   void setName(String newName);
 

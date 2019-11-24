@@ -1,14 +1,17 @@
 package io.github.zinkmk.product;
 
+/**
+ * @author Kevin Zink This class will let me overload the functions in it. Mainly it's here to help
+ *     me get AU (the enum) It extends Product because it is one. It implements MultimediaControl
+ *     for future use really.
+ */
 public class AudioPlayer extends Product implements MultimediaControl {
 
   private final String supportedAudioFormats;
+
   private final String supportedPlaylistFormats;
 
   /**
-   *
-   * TODO idk actually use this?
-   * Audio player not currently in use..
    * @param manufacturer taken from product
    * @param name taken from product
    * @param supportedAudioFormats generated here

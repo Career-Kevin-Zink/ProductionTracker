@@ -5,7 +5,10 @@ public class Screen implements ScreenSpec { // cute it implements another interf
   private final int refreshRate;
   private final int responseTime;
   private final String resolution;
-
+  /**
+   * @author Kevin Zink A class to specify screen specs for visual/visualmobile. Isn't currently in
+   *     use.
+   */
   public Screen(String resolution, int refreshRate, int responseTime) {
     this.resolution = resolution;
     this.refreshRate = refreshRate;
