@@ -5,10 +5,10 @@ package io.github.zinkmk.product;
  * used instead extends Product.
  */
 class Widget extends Product {
-    public Widget(int ID, ItemType type, String manufacturer, String name) {
+  public Widget(int ID, ItemType type, String manufacturer, String name) {
 
-        super(name, manufacturer, type); // Widget class, used for testing Product
+    super(name, manufacturer, type); // Widget class, used for testing Product
 
-        super.setId(ID);
-    }
+    super.setId(ID);
+  }
 }

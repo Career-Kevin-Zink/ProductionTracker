@@ -2,16 +2,16 @@ package io.github.zinkmk.product;
 
 /**
  * @author Kevin Zink interface built specifically for these functions This interface gets
- * implemented by @Product
+ *     implemented by @Product
  */
 interface Item {
-    int getId();
+  int getId();
 
-    void setName(String newName);
+  void setName(String newName);
 
-    String getName();
+  String getName();
 
-    void setManufacturer(String newManufacturer);
+  void setManufacturer(String newManufacturer);
 
-    String getManufacturer();
+  String getManufacturer();
 }
