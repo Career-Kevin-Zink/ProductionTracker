@@ -10,7 +10,7 @@ import java.util.Properties;
  */
 class DBManager {
     private static final String JDBC_DRIVER = "org.h2.Driver";
-    private static final String DB_URL = "jdbc:h2:./PTI";
+    private static final String DB_URL = "jdbc:h2:./res/PTI";
 
     /**
      * Method for saving products to database.
@@ -22,7 +22,7 @@ class DBManager {
     public static void saveProduct(Product product, String QtyComboBox) {
         try { // try / catch so we don't error out.
             Properties prop = new Properties();
-            prop.load(new FileInputStream("./properties"));
+            prop.load(new FileInputStream("./res/properties"));
             String PASS = prop.getProperty("password");
             Class.forName(JDBC_DRIVER);
             Connection conn = DriverManager.getConnection(DB_URL, "", PASS);
@@ -63,7 +63,7 @@ class DBManager {
         System.out.println("Connecting to database..");
         try { // try/catch to not error out
             Properties prop = new Properties();
-            prop.load(new FileInputStream("./properties"));
+            prop.load(new FileInputStream("./res/properties"));
             String PASS = prop.getProperty("password");
             Class.forName(JDBC_DRIVER);
             Connection conn = DriverManager.getConnection(DB_URL, "", "SonSat1200");
@@ -88,7 +88,7 @@ class DBManager {
     public static ResultSet loadProductionRecords() { // Here we're loading our production records
         try {
             Properties prop = new Properties();
-            prop.load(new FileInputStream("./properties"));
+            prop.load(new FileInputStream("./res/properties"));
             String PASS = prop.getProperty("password");
             Class.forName(JDBC_DRIVER);
             Connection conn = DriverManager.getConnection(DB_URL, "", PASS);
@@ -110,7 +110,7 @@ class DBManager {
             ProductionRecord productionRecord) { // and here we save our PR's
         try {
             Properties prop = new Properties();
-            prop.load(new FileInputStream("./properties"));
+            prop.load(new FileInputStream("./res/properties"));
             String PASS = prop.getProperty("password");
             Class.forName(JDBC_DRIVER);
             Connection conn = DriverManager.getConnection(DB_URL, "", PASS);
